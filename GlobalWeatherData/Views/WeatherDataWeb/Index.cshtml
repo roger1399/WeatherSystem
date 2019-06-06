@@ -1,0 +1,107 @@
+﻿@model GlobalWeatherData.Models.WeatherDataViewModel;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script>
+        $(document).ready(function () {
+            $('#Country').change(function () {
+                $.ajax({
+                    url: '/api/WeatherData/Country/' + $(this).val() + '/GetCities',
+                    type: 'GET',
+                    datatype: 'json',
+                    success: function (data) {
+                        $('#City').html('');
+                        $('#WeatherReport').text("Weather Report- ");
+                        $('#Time').text("");
+                        $('#Wind').text("");
+                        $('#Visibility').text("");
+                        $('#SkyCondition').text("");
+                        $('#Temperature').text("");
+                        $('#Pressure').text("");;
+                        $.each(data, function () {
+                            $('#City').append($('<option/>', {
+                                value: this,
+                                text: this
+                            }));
+                        });
+                    }
+                });
+            });
+            $('#LookUp').click(function () {
+                $.ajax({
+                    url: '/api/WeatherData/Country/' + $('#Country').val() + '/City/ ' + $('#City').val() +'/GetWeather',
+                    type: 'GET',
+                    datatype: 'json',
+                    success: function (data) { 
+                        $('#WeatherReport').text("Weather Report- " + $('#City').val());
+                        $('#Time').text(data["time"]);
+                        $('#Wind').text(data["wind"]);
+                        $('#Visibility').text(data["visibility"]);
+                        $('#SkyCondition').text(data["skyCondition"]);
+                        $('#Temperature').text(data["temperature"]);
+                        $('#Pressure').text(data["pressure"]);
+                    }
+                });
+            });
+        });
+    </script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+</head>
+<body>
+    @using (Html.BeginForm("Index", "WeatherDataWeb", FormMethod.Post, new { role = "form", @class = "form-horizontal" }))
+    {
+    <div class="container">
+        <div class="row form-group">
+            <h1 class="col-sm-4 col-sm-offset-4"> Weather Data</h1>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-2">
+                @Html.LabelFor(x => x.Country)
+            </div>
+            <div class="col-sm-8">
+                @Html.DropDownListFor(x => x.Country, Model.Countries, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-2">
+                @Html.LabelFor(x => x.City)
+            </div>
+            <div class="col-sm-8">
+                @Html.DropDownListFor(x => x.City, Model.Cities, new { @class = "form-control" })
+            </div>
+            <div class="col-sm-2">
+                <input type="button" id="LookUp" value="LookUp" class="btn btn-primary" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <h2 Id="WeatherReport" class="col-sm-5 col-sm-offset-4">Weather Report- @Model.City </h2>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-2 col-sm-offset-4">@Html.LabelFor(x => x.CityWeatherData.Time) - </div>  <div id="Time" class="col-sm-2"> @Model.CityWeatherData.Time </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-2 col-sm-offset-4">@Html.LabelFor(x => x.CityWeatherData.Wind)- </div>  <div id="Wind" class="col-sm-2"> @Model.CityWeatherData.Wind </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-2 col-sm-offset-4">@Html.LabelFor(x => x.CityWeatherData.Visibility) - </div>  <div id="Visibility" class="col-sm-2"> @Model.CityWeatherData.Visibility </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-2 col-sm-offset-4">@Html.LabelFor(x => x.CityWeatherData.SkyCondition) - </div>  <div id="SkyCondition" class="col-sm-2"> @Model.CityWeatherData.SkyCondition </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-2 col-sm-offset-4">@Html.LabelFor(x => x.CityWeatherData.Temperature) - </div>  <div id="Temperature" class="col-sm-2"> @Model.CityWeatherData.Temperature </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-2 col-sm-offset-4">@Html.LabelFor(x => x.CityWeatherData.Pressure) - </div>  <div id="Pressure" class="col-sm-2"> @Model.CityWeatherData.Pressure </div>
+        </div>
+    </div>
+    }
+
+</body>
+</html>

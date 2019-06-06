@@ -1,0 +1,58 @@
+﻿[15/04/2018 12:23:20 PM Informational] ------ Load Playlist started ------
+[15/04/2018 12:23:20 PM Informational] ========== Load Playlist finished (0:00:00.0160009) ==========
+[15/04/2018 12:23:21 PM Informational] ------ Discover test started ------
+[15/04/2018 12:23:23 PM Warning] [MSTest][Discovery][D:\Iasset\GlobalWeatherDataTest\bin\Debug\netcoreapp2.0\GlobalWeatherDataTest.dll] UTA001: TestClass attribute defined on non-public class GlobalWeatherDataTest.WeatherDataWebContollerTest
+[15/04/2018 12:23:23 PM Informational] ========== Discover test finished: 5 found (0:00:02.2691297) ==========
+[15/04/2018 12:23:34 PM Informational] ------ Run test started ------
+[15/04/2018 12:23:34 PM Warning] [MSTest][Discovery][D:\Iasset\GlobalWeatherDataTest\bin\Debug\netcoreapp2.0\GlobalWeatherDataTest.dll] UTA001: TestClass attribute defined on non-public class GlobalWeatherDataTest.WeatherDataWebContollerTest
+[15/04/2018 12:23:35 PM Informational] ========== Run test finished: 5 run (0:00:01.2440711) ==========
+[15/04/2018 12:27:52 PM Informational] ------ Discover test started ------
+[15/04/2018 12:27:52 PM Error] Unable to fetch symbols for class: GlobalWeatherDataTest.WeatherDataTest
+[15/04/2018 12:27:52 PM Error] Unable to fetch source Information for test method: GlobalWeatherDataTest.WeatherDataTest.TestGetCountriesAPI contained in project: GlobalWeatherDataTest.
+[15/04/2018 12:27:52 PM Error] Unable to fetch source Information for test method: GlobalWeatherDataTest.WeatherDataTest.TestGetCitiesForAustraliaAPI contained in project: GlobalWeatherDataTest.
+[15/04/2018 12:27:52 PM Error] Unable to fetch source Information for test method: GlobalWeatherDataTest.WeatherDataTest.TestGetCitiesForInvalidCountryAPI contained in project: GlobalWeatherDataTest.
+[15/04/2018 12:27:52 PM Error] Unable to fetch source Information for test method: GlobalWeatherDataTest.WeatherDataTest.TestGetWeatherAPI contained in project: GlobalWeatherDataTest.
+[15/04/2018 12:27:52 PM Error] Unable to fetch source Information for test method: GlobalWeatherDataTest.WeatherDataTest.TestGetWeatherForInValidCityAPI contained in project: GlobalWeatherDataTest.
+[15/04/2018 12:27:53 PM Informational] ========== Discover test finished: 5 found (0:00:00.7370422) ==========
+[15/04/2018 12:28:00 PM Informational] ------ Run test started ------
+[15/04/2018 12:28:00 PM Informational] ========== Run test finished: 5 run (0:00:00.8700498) ==========
+[15/04/2018 12:30:16 PM Informational] ------ Discover test started ------
+[15/04/2018 12:30:17 PM Error] Unable to fetch source Information for test method: GlobalWeatherDataTest.WeatherDataTest.WebIndexAction contained in project: GlobalWeatherDataTest.
+[15/04/2018 12:30:17 PM Informational] ========== Discover test finished: 6 found (0:00:01.0760616) ==========
+[15/04/2018 12:30:22 PM Informational] ------ Run test started ------
+[15/04/2018 12:32:26 PM Error] The active test run was aborted. Reason: Unable to communicate with test host process.
+[15/04/2018 12:32:26 PM Informational] ========== Run test finished: 0 run (0:02:04.2391061) ==========
+[15/04/2018 12:32:44 PM Informational] ------ Discover test started ------
+[15/04/2018 12:32:45 PM Informational] ========== Discover test finished: 6 found (0:00:00.7380422) ==========
+[15/04/2018 12:32:52 PM Informational] ------ Run test started ------
+[15/04/2018 12:34:18 PM Error] The active test run was aborted. Reason: Unable to communicate with test host process.
+[15/04/2018 12:34:18 PM Informational] ========== Run test finished: 0 run (0:01:25.895913) ==========
+[15/04/2018 12:35:13 PM Informational] ------ Discover test started ------
+[15/04/2018 12:35:14 PM Informational] ========== Discover test finished: 6 found (0:00:00.8240472) ==========
+[15/04/2018 12:35:14 PM Informational] ------ Run test started ------
+[15/04/2018 12:35:52 PM Error] The active test run was aborted. Reason: Unable to communicate with test host process.
+[15/04/2018 12:35:52 PM Informational] ========== Run test finished: 0 run (0:00:37.8371642) ==========
+[15/04/2018 12:37:24 PM Informational] ------ Discover test started ------
+[15/04/2018 12:37:25 PM Informational] ========== Discover test finished: 6 found (0:00:00.7640437) ==========
+[15/04/2018 12:37:25 PM Informational] ------ Run test started ------
+[15/04/2018 12:37:26 PM Informational] ========== Run test finished: 1 run (0:00:00.7560433) ==========
+[15/04/2018 12:37:32 PM Informational] ------ Run test started ------
+[15/04/2018 12:37:33 PM Informational] ========== Run test finished: 6 run (0:00:00.9640551) ==========
+[15/04/2018 12:38:01 PM Informational] ------ Run test started ------
+[15/04/2018 12:38:49 PM Informational] ========== Run test finished: 1 run (0:00:48.4147691) ==========
+[15/04/2018 1:14:35 PM Informational] ------ Discover test started ------
+[15/04/2018 1:14:36 PM Informational] ========== Discover test finished: 6 found (0:00:00.8240471) ==========
+[15/04/2018 1:14:36 PM Informational] ------ Run test started ------
+[15/04/2018 1:14:37 PM Informational] ========== Run test finished: 6 run (0:00:01.0000572) ==========
+[15/04/2018 1:24:26 PM Informational] ------ Discover test started ------
+[15/04/2018 1:24:27 PM Informational] ========== Discover test finished: 6 found (0:00:00.734042) ==========
+[15/04/2018 1:24:27 PM Informational] ------ Run test started ------
+[15/04/2018 1:24:28 PM Informational] ========== Run test finished: 1 run (0:00:00.8350478) ==========
+[15/04/2018 1:24:56 PM Informational] ------ Discover test started ------
+[15/04/2018 1:24:57 PM Informational] ========== Discover test finished: 6 found (0:00:00.7020401) ==========
+[15/04/2018 1:24:57 PM Informational] ------ Run test started ------
+[15/04/2018 1:24:58 PM Informational] ========== Run test finished: 6 run (0:00:00.9980571) ==========
+[15/04/2018 1:25:28 PM Informational] ------ Discover test started ------
+[15/04/2018 1:25:29 PM Informational] ========== Discover test finished: 6 found (0:00:00.69804) ==========
+[15/04/2018 1:25:29 PM Informational] ------ Run test started ------
+[15/04/2018 1:25:30 PM Informational] ========== Run test finished: 6 run (0:00:01.0210584) ==========
