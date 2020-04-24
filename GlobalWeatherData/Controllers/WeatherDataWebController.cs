@@ -14,8 +14,8 @@ namespace GlobalWeatherData.Controllers
         {
             _weatherDataService = weatherDataService;
         }
-        // GET: WeatherDataWeb
-        [HttpGet]
+        // GET: WeatherDataWeb   this is already set in the startup routes 
+         [HttpGet]
         public ActionResult Index()
         {
             WeatherDataViewModel model = new WeatherDataViewModel();
